@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Кликер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Pokemon Кликер</h1>
+    
+    <div id="clicker">
+      <div id="counter">Покиконы: 0</div>
+      <img id="pokeball" src="images/pokeball.png" alt="Покебол" onclick="clickPokemon()">
+    </div>
+
+    <div id="menu">
+      <button onclick="showSection('shop')">🏪 Магазин</button>
+      <button onclick="showSection('stats')">📊 Статистика</button>
+      <button onclick="showSection('inventory')">🎒 Рюкзак</button>
+    </div>
+
+    <div id="main"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

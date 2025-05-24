@@ -1,0 +1,55 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#clicker {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#counter {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcb05;
+}
+
+#pokeball {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  animation: float 2s ease-in-out infinite;
+}
+
+#pokeball:hover {
+  transform: scale(1.1);
+}
+
+#pokeball:active {
+  transform: scale(0.9);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Остальные стили остаются как в предыдущей версии */
